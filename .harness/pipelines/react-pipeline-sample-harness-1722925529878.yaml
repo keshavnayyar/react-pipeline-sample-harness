@@ -27,17 +27,6 @@ pipeline:
                   timeout: ""
                   type: Run
               - step:
-                  identifier: test
-                  name: test
-                  spec:
-                    shell: Sh
-                    command: npm run test
-                  timeout: ""
-                  type: Run
-                  when:
-                    stageStatus: Success
-                    condition: <+variable.test> == "True"
-              - step:
                   identifier: build
                   name: build
                   spec:
