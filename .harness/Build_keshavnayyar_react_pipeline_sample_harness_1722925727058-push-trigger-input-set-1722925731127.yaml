@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_keshavnayyar_react_pipeline_sample_harness_1722925727058-push-trigger-input-set
+  identifier: Build_keshavnayyar_react_pipeline_sample_harness_1722925727058pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_keshavnayyar_react_pipeline_sample_harness_1722925727058
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
